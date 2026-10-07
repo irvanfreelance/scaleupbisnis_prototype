@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { 
-  Sparkles, 
-  ArrowRight, 
-  CheckCircle2, 
-  AlertTriangle, 
-  Star, 
-  ChevronDown, 
+import {
+  Sparkles,
+  ArrowRight,
+  CheckCircle2,
+  AlertTriangle,
+  Star,
+  ChevronDown,
   ChevronRight,
-  TrendingUp, 
+  TrendingUp,
   Lightbulb,
   Building,
   DollarSign,
@@ -26,10 +26,10 @@ interface LandingPageProps {
   onNavigate: (page: string) => void;
 }
 
-export const LandingPage: React.FC<LandingPageProps> = ({ 
-  onSelectProduct, 
+export const LandingPage: React.FC<LandingPageProps> = ({
+  onSelectProduct,
   onStartDemoTest,
-  onNavigate 
+  onNavigate
 }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [activePoll, setActivePoll] = useState('Rp 50-100 Juta');
@@ -98,7 +98,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
   return (
     <div style={{ overflowX: 'hidden', background: '#ffffff', color: '#0f172a' }}>
-      
+
       {/* 1. HERO SECTION (Exact layout from attachment) */}
       <section style={{
         position: 'relative',
@@ -153,8 +153,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 color: '#0f172a',
                 marginBottom: '20px'
               }}>
-                Sudah Ikut Banyak Kelas, <br />
-                Tapi Bisnis Masih <br />
+                Sudah Ikut Banyak Kelas,
+                Tapi Bisnis Masih&nbsp;
                 <span style={{ color: '#059669' }}>Jalan di Tempat?</span>
               </h1>
 
@@ -606,48 +606,17 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 position: 'relative',
                 display: 'inline-block'
               }}>
-                <img 
-                  src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=500&q=80" 
+                <img
+                  src="/riza-zacharias.png"
                   alt="Mentor Bisnis Riza Zacharias"
                   style={{
-                    width: '260px',
-                    height: '320px',
-                    objectFit: 'cover',
+                    width: '300px',
+                    height: 'auto',
+                    objectFit: 'contain',
                     borderRadius: '24px',
                     boxShadow: 'var(--shadow-xl)'
                   }}
                 />
-                <div style={{
-                  position: 'absolute',
-                  bottom: '-12px',
-                  right: '-10px',
-                  background: '#ffffff',
-                  border: '1px solid #e2e8f0',
-                  borderRadius: '14px',
-                  padding: '8px 14px',
-                  boxShadow: 'var(--shadow-md)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px'
-                }}>
-                  <div style={{
-                    width: '28px',
-                    height: '28px',
-                    borderRadius: '50%',
-                    background: '#ecfdf5',
-                    color: '#059669',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontWeight: 800
-                  }}>
-                    🎓
-                  </div>
-                  <div style={{ textAlign: 'left' }}>
-                    <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#0f172a' }}>30+ Tahun</div>
-                    <div style={{ fontSize: '0.68rem', color: '#64748b' }}>Pengalaman</div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -696,7 +665,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       <section style={{ padding: '80px 0', background: '#f8fafc' }}>
         <div className="container" style={{ maxWidth: '980px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '40px', alignItems: 'center' }}>
-            
+
             {/* Visual Report Card preview from attachment */}
             <div style={{
               background: '#ffffff',
@@ -819,7 +788,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       }}>
         <div className="container" style={{ maxWidth: '980px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '40px', alignItems: 'center' }}>
-            
+
             <div>
               <span className="section-tag-dark" style={{
                 display: 'inline-block',
@@ -883,7 +852,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               boxShadow: 'var(--shadow-lg)'
             }}>
               <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginBottom: '12px' }}>Tingkatan Hasil</div>
-              
+
               {/* Graphic line chart */}
               <div style={{
                 height: '140px',
@@ -926,7 +895,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       <section id="how-it-works-section" style={{ padding: '80px 0', background: '#ffffff' }}>
         <div className="container" style={{ maxWidth: '960px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '40px', alignItems: 'center' }}>
-            
+
             {/* 3 Step List */}
             <div>
               <span className="section-tag">PROSES YANG MUDAH</span>
@@ -1083,8 +1052,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               justifyContent: 'space-between'
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '14px' }}>
-                <img 
-                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" 
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
                   alt="Rina S."
                   style={{ width: '44px', height: '44px', borderRadius: '50%', objectFit: 'cover' }}
                 />
@@ -1115,8 +1084,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               justifyContent: 'space-between'
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '14px' }}>
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" 
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
                   alt="Andi R."
                   style={{ width: '44px', height: '44px', borderRadius: '50%', objectFit: 'cover' }}
                 />
@@ -1153,7 +1122,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            
+
             {/* Card 1: Audit Satu Fase - Rp 197.000 from Attachment */}
             <div style={{
               background: '#ffffff',
@@ -1279,7 +1248,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
       {/* 10.5 SECTION UPSELLING & LAYANAN LANJUTAN (Sesuai PRD Section 5.8) */}
       <section id="upsell-section" style={{ padding: '80px 0', background: 'linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%)', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
-        <div className="container" style={{ maxWidth: '1040px' }}>
+        <div className="container" style={{ maxWidth: '1280px' }}>
           <div style={{ textAlign: 'center', marginBottom: '44px' }}>
             <span className="section-tag">KATALOG LAYANAN LANJUTAN</span>
             <h2 style={{ fontSize: '2.1rem', marginTop: '12px', marginBottom: '10px', fontWeight: 800 }}>
@@ -1290,13 +1259,13 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))', gap: '22px' }}>
+          <div className="upsell-grid">
             {productsData.slice(2).map((item) => (
               <div key={item.id} style={{
                 background: '#ffffff',
                 border: '1px solid #e2e8f0',
-                borderRadius: '20px',
-                padding: '28px',
+                borderRadius: '18px',
+                padding: '22px 20px',
                 boxShadow: 'var(--shadow-sm)',
                 display: 'flex',
                 flexDirection: 'column',
@@ -1304,28 +1273,28 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 transition: 'transform 0.2s ease, box-shadow 0.2s ease'
               }}>
                 <div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                    <span style={{ fontSize: '0.72rem', background: '#ecfdf5', color: '#059669', padding: '3px 10px', borderRadius: '999px', fontWeight: 700 }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px', minHeight: '24px' }}>
+                    <span style={{ fontSize: '0.7rem', background: '#ecfdf5', color: '#059669', padding: '3px 8px', borderRadius: '999px', fontWeight: 700 }}>
                       {item.badge}
                     </span>
                     {item.price_strikethrough && (
-                      <span style={{ fontSize: '0.8rem', color: '#94a3b8', textDecoration: 'line-through' }}>
+                      <span style={{ fontSize: '0.75rem', color: '#94a3b8', textDecoration: 'line-through' }}>
                         Rp {item.price_strikethrough.toLocaleString('id-ID')}
                       </span>
                     )}
                   </div>
 
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0f172a', marginBottom: '8px' }}>
+                  <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0f172a', marginBottom: '8px', lineHeight: 1.35 }}>
                     {item.name}
                   </h3>
-                  <p style={{ fontSize: '0.86rem', color: '#64748b', lineHeight: 1.55, marginBottom: '16px' }}>
+                  <p style={{ fontSize: '0.8rem', color: '#64748b', lineHeight: 1.5, marginBottom: '14px' }}>
                     {item.short_desc}
                   </p>
 
-                  <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: '14px', marginBottom: '20px', display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.82rem', color: '#334155' }}>
+                  <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: '12px', marginBottom: '18px', display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '0.78rem', color: '#334155' }}>
                     {item.features.map((feat, fi) => (
-                      <div key={fi} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <Check size={14} color="#059669" />
+                      <div key={fi} style={{ display: 'flex', alignItems: 'flex-start', gap: '7px' }}>
+                        <Check size={13} color="#059669" style={{ flexShrink: 0, marginTop: '2px' }} />
                         <span>{feat}</span>
                       </div>
                     ))}
@@ -1333,15 +1302,15 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 </div>
 
                 <div>
-                  <div style={{ fontSize: '1.45rem', fontWeight: 900, color: '#059669', marginBottom: '14px', fontFamily: 'var(--font-heading)' }}>
+                  <div style={{ fontSize: '1.3rem', fontWeight: 900, color: '#059669', marginBottom: '12px', fontFamily: 'var(--font-heading)' }}>
                     Rp {item.price.toLocaleString('id-ID')}
                   </div>
                   <button
                     onClick={() => onSelectProduct(item.id)}
                     className="btn btn-primary"
-                    style={{ width: '100%', borderRadius: '999px', padding: '11px', fontSize: '0.9rem' }}
+                    style={{ width: '100%', borderRadius: '999px', padding: '10px 14px', fontSize: '0.84rem' }}
                   >
-                    Beli Layanan Ini Sekarang →
+                    Beli Layanan Ini →
                   </button>
                 </div>
               </div>

@@ -62,7 +62,7 @@ export const CustomerPortal: React.FC<CustomerPortalProps> = ({
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
+        <div className="upsell-grid">
           {productsData.slice(2).map((item) => (
             <div key={item.id} style={{
               background: '#ffffff',
